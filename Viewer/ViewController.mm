@@ -28,6 +28,8 @@ double frameacc[4];
 double framerot[4];
 int framexy[2];
 
+//also get sound, gravitometer?,
+
 //------------------------------------------------------------------------------
 
 namespace {
@@ -636,6 +638,13 @@ struct AppStatus
 	fwrite(&framexy[0], 1, 4, fp);
 	fwrite(&framexy[1], 1, 4, fp);
 	fclose(fp);
+    currentMaxRotX = 0;
+    currentMaxRotY = 0;
+    currentMaxRotZ = 0;
+    currentMaxAccelX = 0;
+    currentMaxAccelY = 0;
+    currentMaxAccelZ = 0;
+    
 }
 
 //------------------------------------------------------------------------------

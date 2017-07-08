@@ -6,7 +6,7 @@
 
 #import <UIKit/UIKit.h>
 #define HAS_LIBCXX
-#import <Structure/Structure.h>
+#import "Structure.framework/Headers/Structure.h"
 #import <CoreMotion/CoreMotion.h>
 
 @interface ViewController : UIViewController <STSensorControllerDelegate>
